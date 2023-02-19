@@ -98,3 +98,84 @@ if(marksBMI>johnsBMI){
 } else{
     console.log(` Johns BMI (${johnsBMI .toFixed(2)}) is higher than MArks BMI (${marksBMI .toFixed(2)})`)
 }
+
+
+//Type Conversion and Coercion
+
+console.log('9' - '5'); 
+console.log('19' - '13' + '17');  
+console.log('19' - '13' + 17); 
+console.log('123' < 57); 
+console.log(5 + 6 + '4' + 9 - 4 - 2);
+
+//Equality Operators: == vs. ===
+
+const numNeighbors = Number (
+    prompt('How many neighbor countries does your country have?'),
+    );
+    
+    if (numNeighbors === 1) {
+    console.log('Only 1 border!');
+    } else if (numNeighbors > 1) {
+    console.log('More than 1 border');
+    } else {
+    console.log('No borders');
+    }
+
+    //Logical Operators
+
+if (language === 'tamil' && population < 50 && !isIsland)
+{
+console.log(`You should live in ${country}`);
+} else {
+console.log(`${country} does not meet your criteria`);
+}
+
+
+//Coding Challenge #3
+
+// //Data 1
+// const scoreDolphins = (96 + 108 + 89) / 3;
+// const scoreKoalas = (88 + 91 + 110) / 3;
+// console.log(scoreDolphins, scoreKoalas);
+
+// if (scoreDolphins > scoreKoalas) {
+//   console.log('Dolphins win the trophy');
+// } else if (scoreKoalas > scoreDolphins) {
+//   console.log('Koalas win the trophy');
+// } else if (scoreDolphins === scoreKoalas) {
+//   console.log('Both win the trophy!');
+// } else {
+//     console.log('No one wins the trophy');
+// }
+
+
+// //Data Bonus 1
+// const scoreDolphins = (97 + 112 + 101) / 3;
+// const scoreKoalas = (109 + 95 + 123) / 3;
+// console.log(scoreDolphins, scoreKoalas);
+
+// if (scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
+//   console.log('Dolphins win the trophy');
+// } else if (scoreKoalas > scoreDolphins && scoreKoalas >= 100) {
+//   console.log('Koalas win the trophy');
+// } else if (scoreDolphins === scoreKoalas && scoreDolphins >= 100 && scoreKoalas >= 100) {
+//   console.log('Both win the trophy!');
+// } else {
+//   console.log('No one wins the trophy');
+// }
+
+//Data Bonus 2
+const scoreDolphins = (97 + 112 + 101) / 3;
+const scoreKoalas = (109 + 95 + 10) / 3;
+console.log(scoreDolphins, scoreKoalas);
+
+if (scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
+  console.log('Dolphins win the trophy');
+} else if (scoreKoalas > scoreDolphins && scoreKoalas >= 100) {
+  console.log('Koalas win the trophy');
+} else if (scoreDolphins === scoreKoalas && scoreDolphins >= 100 && scoreKoalas >= 100) {
+  console.log('Both win the trophy!');
+} else {
+  console.log('No one wins the trophy');
+}
