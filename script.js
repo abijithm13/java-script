@@ -110,17 +110,17 @@ console.log(5 + 6 + '4' + 9 - 4 - 2);
 
 //Equality Operators: == vs. ===
 
-const numNeighbors = Number (
-    prompt('How many neighbor countries does your country have?'),
-    );
+// const numNeighbors = Number (
+//     prompt('How many neighbor countries does your country have?'),
+//     );
     
-    if (numNeighbors === 1) {
-    console.log('Only 1 border!');
-    } else if (numNeighbors > 1) {
-    console.log('More than 1 border');
-    } else {
-    console.log('No borders');
-    }
+//     if (numNeighbors === 1) {
+//     console.log('Only 1 border!');
+//     } else if (numNeighbors > 1) {
+//     console.log('More than 1 border');
+//     } else {
+//     console.log('No borders');
+//     }
 
     //Logical Operators
 
@@ -179,3 +179,36 @@ if (scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
 } else {
   console.log('No one wins the trophy');
 }
+
+
+//Switch statement
+
+switch (language) {
+  case 'chinese':
+  case 'mandarin':
+  console.log('MOST number of native speakers!');
+  break;
+
+  case 'spanish':
+  console.log('2nd place in number of native speakers');
+  break;
+
+  case 'english':
+  console.log('3rd place');
+  break;
+
+  case 'hindi':
+  console.log('Number 4');
+  break;
+
+  case 'arabic':
+  console.log('5th most spoken language');
+  break;
+
+  default:console.log('Great language too :D');
+  }
+
+
+  //The Conditional (Ternary) Operator
+
+  
