@@ -19,8 +19,6 @@
 // console.log(typeof continent);
 // console.log(typeof population);
 
-
-
 // Let , Const and Var
 
 // language="tamil";
@@ -33,7 +31,6 @@
 // console.log(continent);
 // console.log(island);
 
-
 //Basic operators
 
 // console.log(population/2);
@@ -44,9 +41,6 @@
 
 // const description = country +" is in "+ continent + " and its "+ population+ " people speak "+ language;
 // console.log(description);
-
-
-
 
 //Coding Challenge #1
 
@@ -64,8 +58,6 @@
 
 // console.log (marksBMI, johnsBMI, markshigherBMI);
 
-
-
 //data2
 
 // const marksMass =95;
@@ -80,10 +72,6 @@
 
 // console.log( marksBmi, johnsBmi, marksHigherBmi);
 
-
-
-
-
 //Strings and Template Literals
 
 // const description = `${country} is in ${continent} and its ${population} people speak ${language}`;
@@ -97,8 +85,6 @@
 // console.log(`${country} population is ${33- population} million below average`);
 // }
 
-
-
 //Coding Challenge #2
 
 // if(marksBMI>johnsBMI){
@@ -107,25 +93,20 @@
 //     console.log(` Johns BMI (${johnsBMI .toFixed(2)}) is higher than MArks BMI (${marksBMI .toFixed(2)})`)
 // }
 
-
-
-
 //Type Conversion and Coercion
 
-// console.log('9' - '5'); 
-// console.log('19' - '13' + '17');  
-// console.log('19' - '13' + 17); 
-// console.log('123' < 57); 
+// console.log('9' - '5');
+// console.log('19' - '13' + '17');
+// console.log('19' - '13' + 17);
+// console.log('123' < 57);
 // console.log(5 + 6 + '4' + 9 - 4 - 2);
-
-
 
 //Equality Operators: == vs. ===
 
 // const numNeighbors = Number (
 //     prompt('How many neighbor countries does your country have?'),
 //     );
-    
+
 //     if (numNeighbors === 1) {
 //     console.log('Only 1 border!');
 //     } else if (numNeighbors > 1) {
@@ -134,9 +115,7 @@
 //     console.log('No borders');
 //     }
 
-
-
-    //Logical Operators
+//Logical Operators
 
 // if (language === 'tamil' && population < 50 && !isIsland)
 // {
@@ -144,9 +123,6 @@
 // } else {
 // console.log(`${country} does not meet your criteria`);
 // }
-
-
-
 
 //Coding Challenge #3
 
@@ -165,7 +141,6 @@
 //     console.log('No one wins the trophy');
 // }
 
-
 // //Data Bonus 1
 // const scoreDolphins = (97 + 112 + 101) / 3;
 // const scoreKoalas = (109 + 95 + 123) / 3;
@@ -180,7 +155,6 @@
 // } else {
 //   console.log('No one wins the trophy');
 // }
-
 
 //Data Bonus 2
 
@@ -197,9 +171,6 @@
 // } else {
 //   console.log('No one wins the trophy');
 // }
-
-
-
 
 //Switch statement
 
@@ -228,22 +199,15 @@
 //   default:console.log('Great language too :D');
 //   }
 
+//The Conditional (Ternary) Operator
 
-  //The Conditional (Ternary) Operator
+// console.log(`${country}'s population is ${population > 33 ? 'above' :'below'} average`,);
 
-  // console.log(`${country}'s population is ${population > 33 ? 'above' :'below'} average`,);
-
-
-
-
-  //Coding Challenge #4
+//Coding Challenge #4
 
 // const bill = 745;
 // const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
 // console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`);
-
-
-
 
 //Functions
 
@@ -261,8 +225,6 @@
 // console.log(descPakistan);
 // console.log(descFinland);
 
-
-
 //Function Declarations vs. Expressions
 
 // function percentageOfWorld1(population){
@@ -277,7 +239,6 @@
 // console.log(perPakistan1);
 // console.log(perFinland1);
 
-
 // function percentageOfWorld2(population){
 //   return (population/7900)*100;
 // }
@@ -288,8 +249,6 @@
 // console.log(perchina2);
 // console.log(perafrica2);
 // console.log(perjapan2);
-
-
 
 //Arrow Functions
 
@@ -305,7 +264,6 @@
 
 //Functions Calling Other Functions
 
-
 // const describePopulation = function (country, population) {
 //   const percentage = percentageOfWorld1(population);
 //   const description = `${country} has ${population} million
@@ -315,14 +273,18 @@
 //   describePopulation('India', 10);
 //   describePopulation('USA', 2525);
 
-  //Coding Challenge #5
+//Coding Challenge #5
 
 //Data 1
 
-// const calcAverage =(score1, score2, score3) => (score1, score2, score3) / 3;
+// const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
 
-// const DolphinsScore = (44,23,71);
-// const KoalasScore =(65,54,49);
+// const dolphinsScore = calcAverage(8,9,8);
+// const koalasScore = calcAverage(97, 44, 69);
+
+// console.log(`Dolphins Score: `, dolphinsScore)
+// console.log(`Koalas Score: `, koalasScore)
+
 
 // const checkWinner = (avgDolphins, avgKoalas) => {
 //   if (avgDolphins >= 2 * avgKoalas) {
@@ -334,18 +296,18 @@
 //   }
 // };
 
-// const avgDolphins = calcAverage(DolphinsScore);
-// const avgKoalas = calcAverage(KoalasScore);
+// checkWinner(dolphinsScore, koalasScore);
 
-// checkWinner(avgDolphins, avgKoalas);
+
+
 
 //Data 2
 
-// const calcAverage =(score1, score2, score3) => (score1, score2, score3) / 3;
+// const calcAverage =(score1, score2, score3) => (score1 + score2 + score3) / 3;
 
-// const DolphinsScore2 = (85, 54, 41);
-// const KoalasScore2 = (23, 34, 27);
- 
+// const DolphinsScore2 = calcAverage(85, 54, 41);
+// const KoalasScore2 = calcAverage(23, 34, 27);
+
 // const checkWinner = (avgDolphins, avgKoalas) => {
 //   if (avgDolphins >= 2 * avgKoalas) {
 //     console.log(`Dolphins win (${avgDolphins} vs. ${avgKoalas})`);
@@ -356,27 +318,19 @@
 //   }
 // };
 
-// const avgDolphins = calcAverage(DolphinsScore2);
-// const avgKoalas = calcAverage(KoalasScore2);
+// checkWinner(DolphinsScore2, KoalasScore2);
 
-// checkWinner(avgDolphins, avgKoalas);
+//Introduction to Arrays
 
-
-
-  //Introduction to Arrays
-
-  // const populations = [100, 141, 3312, 83];
-  // console.log(populations.length === 4);
-  // const percentages = [
-  // percentageOfWorld1(populations[0]),
-  // percentageOfWorld1(populations[1]),
-  // percentageOfWorld1(populations[2]),
-  // percentageOfWorld1(populations[3])
-  // ];
-  // console.log(percentages);
-
-
-
+// const populations = [100, 141, 3312, 83];
+// console.log(populations.length === 4);
+// const percentages = [
+// percentageOfWorld1(populations[0]),
+// percentageOfWorld1(populations[1]),
+// percentageOfWorld1(populations[2]),
+// percentageOfWorld1(populations[3])
+// ];
+// console.log(percentages);
 
 //Basic Array Operations (Methods)
 
@@ -391,11 +345,7 @@
 // neighbours[neighbours.indexOf('Germany')] = 'Republic of Germany';
 // console.log(neighbours);
 
-
-
-  
-  // code challenge 6
-
+// code challenge 6
 
 //   function calcTip(bill){
 //     if (bill >=50 &&  bill <=300){
@@ -418,7 +368,6 @@
 
 // console.log('totals:',totals);
 
-
 //Introduction to Objects
 
 // const myCountry = {
@@ -429,37 +378,34 @@
 //   neighbours: ['China', 'Srilanka', 'Pakistan']
 //   };
 
+//DOT VS Bracket Notation
 
-  //DOT VS Bracket Notation
+// console.log(`${myCountry.country} has ${myCountry.population} ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}.`);
 
-  // console.log(`${myCountry.country} has ${myCountry.population} ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}.`);
+// myCountry.population += 2;
+// myCountry['population'] -= 2;
 
-  // myCountry.population += 2;
-  // myCountry['population'] -= 2;
+//Object Methods
 
+// const myCountry2 = {
+//   country: 'India',
+//   capital: 'Delhi',
+//   language: 'Hindi',
+//   population: 10,
+//   neighbours: ['China', 'Srilanka', 'Pakistan'],
+//   describe: function() {
+//     console.log(`${this.country} has ${this.population} ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}.`);
+//   },
+//   checkIsland: function() {
+//     this.isIsland = (this.neighbours.length === 0) ? true : false;
+//   }
+// };
 
-  //Object Methods
+// myCountry2.describe();
+// myCountry2.checkIsland();
+// console.log(myCountry2.isIsland);
 
-  // const myCountry2 = {
-  //   country: 'India',
-  //   capital: 'Delhi',
-  //   language: 'Hindi',
-  //   population: 10,
-  //   neighbours: ['China', 'Srilanka', 'Pakistan'],
-  //   describe: function() {
-  //     console.log(`${this.country} has ${this.population} ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}.`);
-  //   },
-  //   checkIsland: function() {
-  //     this.isIsland = (this.neighbours.length === 0) ? true : false;
-  //   }
-  // };
-
-  // myCountry2.describe();
-  // myCountry2.checkIsland();
-  // console.log(myCountry2.isIsland);
-
-
-  //Coding Challenge #7
+//Coding Challenge #7
 
 //   const mark = {
 //     fullName: 'Mark Miller',
@@ -492,14 +438,11 @@
 //   console.log(`Both ${mark.fullName} and ${john.fullName} have the same BMI (${mark.bmi})!`);
 // }
 
-
 // //Iterations: The For Loop
 
 // for (let i = 1; i <= 50; i++) {
 //   console.log(`Voter number ${i} is currently voting`);
 // }
-
-
 
 //Looping Arrays, Breaking and Continuing
 
@@ -529,25 +472,23 @@
 //   }
 // }
 
-
 //The while Loop
 
-const populations = [100, 141, 3312, 83];
+// const populations = [100, 141, 3312, 83];
 
-function percentageOfWorld1(population) {
-  return (population / 7900) * 100;
-}
+// function percentageOfWorld1(population) {
+//   return (population / 7900) * 100;
+// }
 
-const percentages = [];
-let i = 0;
-while (i < populations.length) {
-  const percentage = percentageOfWorld1(populations[i]);
-  percentages.push(percentage);
-  i++;
-}
+// const percentages = [];
+// let i = 0;
+// while (i < populations.length) {
+//   const percentage = percentageOfWorld1(populations[i]);
+//   percentages.push(percentage);
+//   i++;
+// }
 
-console.log(percentages);
-
+// console.log(percentages);
 
 //Coding Challenge #8
 
@@ -571,13 +512,17 @@ for (let i = 0; i < bills.length; i++) {
   totals.push(total);
 }
 
-function calcAverage(arr) {
-  let sum = 0;
-  for (let i = 0; i < arr.length; i++) {
-    sum += arr[i];
-  }
-  return sum / arr.length;
-}
+console.log(bills);
+console.log(tips);
+console.log(totals);
 
-const avg = calcAverage(totals);
-console.log(avg);
+// function calcAverage(arr) {
+//   let sum = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     sum += arr[i];
+//   }
+//   return sum / arr.length;
+// }
+
+// const avg = calcAverage(totals);
+// console.log(avg);
